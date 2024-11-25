@@ -1,8 +1,7 @@
-/* Algemene styling */
 *,
 *::before,
 *::after {
-    box-sizing: border-box; /* Zorg ervoor dat padding en borders de totale grootte beïnvloeden */
+    box-sizing: border-box;
 }
 
 body {
@@ -14,7 +13,6 @@ body {
     color: black;
 }
 
-/* Header styling */
 header {
     padding: 20px 0;
     background-color: #fff;
@@ -24,14 +22,12 @@ header {
     border-bottom: 1px solid #ddd;
 }
 
-/* Logo styling */
 header img.logo {
     width: 100px;
     height: auto;
     margin-left: 20px;
 }
 
-/* Navigatie styling */
 header nav {
     display: flex;
     align-items: center;
@@ -48,6 +44,7 @@ header nav a {
     font-weight: bold;
 }
 
+
 header nav input {
     width: 300px;
     height: 35px;
@@ -60,22 +57,21 @@ header nav input {
 
 header nav input:focus {
     border-color: #4CAF50;
+    outline: none;
 }
 
-/* Reclame afbeelding */
 .advertisement img {
     max-width: 100%;
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease;
-    margin-top: 20px; /* Voeg extra ruimte boven de reclame toe */
+    margin-top: 20px;
 }
 
 .advertisement img:hover {
     transform: scale(1.05);
 }
 
-/* Aanbevolen Producten */
 .recommended-products {
     margin: 40px auto;
     max-width: 1200px;
@@ -88,10 +84,10 @@ header nav input:focus {
     margin-bottom: 20px;
 }
 
-/* Product Grid */
+
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Vier kolommen */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-content: center;
 }
@@ -160,7 +156,6 @@ header nav input:focus {
     background-color: #0056b3;
 }
 
-/* Algemene styling voor alle afbeeldingen */
 img {
     border-radius: 20px;
     margin-top: 25px;
@@ -173,17 +168,4 @@ footer {
     text-align: center;
     font-size: 14px;
     color: #555;
-}
-
-/* Responsieve styling voor kleinere schermen */
-@media (max-width: 768px) {
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr); /* Twee kolommen op kleinere schermen */
-    }
-}
-
-@media (max-width: 480px) {
-    .product-grid {
-        grid-template-columns: 1fr; /* Eén kolom op heel kleine schermen */
-    }
 }
