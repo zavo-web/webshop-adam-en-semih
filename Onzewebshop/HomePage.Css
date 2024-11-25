@@ -1,90 +1,189 @@
+/* Algemene styling */
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* Zorg ervoor dat padding en borders de totale grootte beïnvloeden */
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #fff; /* Witte achtergrond */
     margin: 0;
     padding: 0;
     text-align: center;
+    color: black;
 }
 
+/* Header styling */
 header {
     padding: 20px 0;
     background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    border-bottom: 1px solid #ddd;
 }
 
-#search-input {
-    width: 300px;
-    height: 40px;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 25px;
-    border: 2px solid #ccc;
-    transition: all 0.3s ease;
+/* Logo styling */
+header img.logo {
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
 }
 
-#search-input:focus {
-    border-color: #4CAF50;
-}
-
-
+/* Navigatie styling */
 header nav {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+    flex-grow: 1;
+    margin-right: 50px;
 }
 
 header nav a {
-    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-header nav img {
-    width: 50px;
+header nav input {
+    width: 300px;
+    height: 35px;
+    padding: 8px;
+    border-radius: 18px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    color: black;
+}
+
+header nav input:focus {
+    border-color: #4CAF50;
+}
+
+/* Reclame afbeelding */
+.advertisement img {
+    max-width: 100%;
     height: auto;
-    margin: 10px;
-    border-radius: 10px;
+    cursor: pointer;
     transition: transform 0.3s ease;
+    margin-top: 20px; /* Voeg extra ruimte boven de reclame toe */
 }
 
-header nav img:hover {
-    transform: scale(1.1);
+.advertisement img:hover {
+    transform: scale(1.05);
 }
 
+/* Aanbevolen Producten */
+.recommended-products {
+    margin: 40px auto;
+    max-width: 1200px;
+    text-align: center;
+}
 
-body > nav {
+.recommended-products-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Vier kolommen */
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 8px 0;
+}
+
+.button-container {
     display: flex;
     justify-content: center;
-    gap: 175px;
-    margin-top: 20px;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-body > nav a {
-    display: inline-block;
-}
-
-body > nav img {
-    width: 100px; 
-    height: auto;
-    margin: 10px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-body > nav img:hover {
-    transform: scale(1.1);
-}
-
-
-footer {
-    background-color: #333;
+.winkelmandje-btn,
+.nu-kopen-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
     color: white;
+    transition: background-color 0.3s ease;
+}
+
+.winkelmandje-btn {
+    background-color: #4CAF50;
+}
+
+.winkelmandje-btn:hover {
+    background-color: #45a049;
+}
+
+.nu-kopen-btn {
+    background-color: #007BFF;
+}
+
+.nu-kopen-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Algemene styling voor alle afbeeldingen */
+img {
+    border-radius: 20px;
+    margin-top: 25px;
+}
+
+/* Footer */
+footer {
+    background-color: #f9f9f9;
     padding: 20px;
     text-align: center;
-    margin-top: 30px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsieve styling voor kleinere schermen */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Twee kolommen op kleinere schermen */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* Eén kolom op heel kleine schermen */
+    }
 }

@@ -1,35 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href=".png" type="image/png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="orlogo.png" type="image/png">
     <link href="HomePage.css" rel="stylesheet">
     <title>TelefoonShop</title>
-  </head>
-  <body>
-    <header>
-      <img src="" alt="Logo" width="" height="">
-         <nav>
-             <a href="categorieën.html" target="_self">
-                 <img src="categorieën.png" alt="Categorieen">
-             </a>
-             <a href=".html" target="_self">
-                 <img src="info.png" alt="info">
-             </a>
-             <div class="header-content">
-              <input type="text" placeholder="Search..." id="search-input">
-             <a href=".html" target="_self">
-                 <img src="user.png" alt="user">
-             </a>
-             <a href=".html" target="_self">
-                 <img src="shopping-cart.png" alt="Shopping cart">
-             </a>
-         </nav>
-     </div>
+</head>
+<body>
 
+    <!-- Header -->
+    <header class="top-header">
+        <img src="orlogo.png" alt="Logo" class="logo">
+        <nav class="nav-menu">
+            <a href="categorieën.html" class="nav-item">Categorieën</a>
+            <a href="info.html" class="nav-item">Over Ons</a>
+            <input type="text" placeholder="Zoekbalk" id="search-input" class="search-bar">
+            <a href="profiel.html" class="nav-item">Profiel</a>
+            <a href="winkelmand.html" class="nav-item">Winkelmand</a>
+        </nav>
     </header>
-    <main></main>
-    <footer></footer>
-  </body>
+
+    <!-- Reclame -->
+    <section class="advertisement">
+        <a href="promo.html">
+            <img src="reclameD.png" alt="Reclame afbeelding">
+        </a>
+    </section>
+
+    <!-- Aanbevolen producten -->
+    <h3 class="recommended-products-title">Aanbevolen producten:</h3>
+    <section class="recommended-products">
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="gsm1.png" alt="GSM 1">
+                <h3>iPhone 14</h3>
+                <p>999€</p>
+                <p>Super Retina XDR-scherm, A15 Bionic-chip</p>
+                <div class="button-container">
+                    <button class="winkelmandje-btn">Winkelmandje</button>
+                    <button class="nu-kopen-btn">Nu Kopen</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="gsm2.png" alt="GSM 2">
+                <h3>Samsung Galaxy S23</h3>
+                <p>849€</p>
+                <p>Dynamic AMOLED 2X, 8GB RAM</p>
+                <div class="button-container">
+                    <button class="winkelmandje-btn">Winkelmandje</button>
+                    <button class="nu-kopen-btn">Nu Kopen</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="gsm3.png" alt="GSM 3">
+                <h3>Google Pixel 7</h3>
+                <p>599€</p>
+                <p>Tensor G2, uitstekende camera's</p>
+                <div class="button-container">
+                    <button class="winkelmandje-btn">Winkelmandje</button>
+                    <button class="nu-kopen-btn">Nu Kopen</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="gsm4.png" alt="GSM 4">
+                <h3>Xiaomi 13 Pro</h3>
+                <p>749€</p>
+                <p>120W snelladen, Leica-camera's</p>
+                <div class="button-container">
+                    <button class="winkelmandje-btn">Winkelmandje</button>
+                    <button class="nu-kopen-btn">Nu Kopen</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TelefoonShop. Alle rechten voorbehouden.</p>
+    </footer>
+
+</body>
 </html>
