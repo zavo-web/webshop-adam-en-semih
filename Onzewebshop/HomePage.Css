@@ -143,3 +143,167 @@ footer {
 .footer-bottom {
     margin-top: 20px;
 }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff; /* Witte achtergrond */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: black;
+}
+
+header {
+    padding: 20px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header img.logo {
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+    flex-grow: 1;
+    margin-right: 50px;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+header nav input {
+    width: 300px;
+    height: 35px;
+    padding: 8px;
+    border-radius: 18px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    color: black;
+}
+
+header nav input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.advertisement img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.advertisement img:hover {
+    transform: scale(1.05);
+}
+
+.recommended-products {
+    margin: 40px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.recommended-products-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 8px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.winkelmandje-btn,
+.nu-kopen-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.winkelmandje-btn {
+    background-color: #4CAF50;
+}
+
+.winkelmandje-btn:hover {
+    background-color: #45a049;
+}
+
+.nu-kopen-btn {
+    background-color: #007BFF;
+}
+
+.nu-kopen-btn:hover {
+    background-color: #0056b3;
+}
+
+img {
+    border-radius: 20px;
+    margin-top: 25px;
+}
+
+
