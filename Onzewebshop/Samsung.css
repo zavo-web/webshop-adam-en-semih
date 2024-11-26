@@ -1,0 +1,164 @@
+/* Algemene body-styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Titel styling */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Product container styling */
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.product {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product p {
+    color: #007bff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.winkelmandje-btn {
+    background-color: #f39c12;
+    color: white;
+}
+
+.nu-kopen-btn {
+    background-color: #27ae60;
+    color: white;
+}
+
+.button-container button:hover {
+    opacity: 0.8;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Logo en links apart uitlijnen */
+    align-items: center;
+    padding: 10px 20px; /* Ruimte binnen de navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Schaduw onder de navbar */
+    position: sticky; /* Houd de navbar vast bovenaan bij scrollen */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo styling binnen de navbar */
+nav .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    width: 50px; /* Klein logoformaat */
+    height: auto;
+}
+
+/* Navigatielinks */
+nav .nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f39c12; /* Hover kleur voor links */
+}
+
+/* Zoekbalk styling */
+nav .search-bar {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+nav .search-bar:focus {
+    border-color: #f39c12;
+    box-shadow: 0 0 5px rgba(243, 156, 18, 0.5);
+}
+
+/* Controle over de hoogte van de navbar */
+nav.height-small {
+    height: 50px;
+}
+
+nav.height-medium {
+    height: 70px;
+}
+
+nav.height-large {
+    height: 100px;
+}
+
+
+nav .logo {
+    width: 50px;
+    height: auto;
+    border-radius: 10px;
+}
