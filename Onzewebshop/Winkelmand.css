@@ -1,0 +1,152 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.cart-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin: 8px 0;
+}
+
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.product-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details h3 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.product-details p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 6px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    margin-left: 10px;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #1abc9c;
+}
+
+
+.total-price {
+    font-weight: bold;
+    color: #1abc9c;
+    margin-top: 10px;
+}
+
+
+.submit-btn {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #16a085;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(22, 160, 133, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(1px);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0; 
+    text-align: center;
+    width: 100%;
+    position: relative; 
+    bottom: 0; 
+}
+
+footer p {
+    font-size: 14px; 
+    margin: 5px 0; 
+    color: #ddd; 
+}
+
+
+a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #4CAF50;
+}
