@@ -1,4 +1,148 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
+header {
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#search-input {
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+#search-input:focus {
+    border-color: #4CAF50;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+header nav a {
+    display: inline-block;
+}
+
+header nav img {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+header nav img:hover {
+    transform: scale(1.1);
+}
+
+
+body > nav {
+    display: flex;
+    justify-content: center;
+    gap: 175px;
+    margin-top: 20px;
+}
+
+body > nav a {
+    display: inline-block;
+}
+
+body > nav img {
+    width: 100px; 
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+body > nav img:hover {
+    transform: scale(1.1);
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Plaats links, midden en rechts */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Items links, midden en rechts */
+.footer-item {
+    flex: 1;
+    text-align: center;
+}
+
+/* Links en rechts uitlijnen */
+.footer-item.links {
+    text-align: left;
+}
+
+.footer-item.rechts {
+    text-align: right;
+}
+
+/* Logo stijl */
+.logo {
+    width: 80px;
+    height: 80px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+/* Box-stijlen */
+.box {
+    border: 1px solid white;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.large-box {
+    border: 1px solid white;
+    padding: 20px;
+    margin: 10px auto;
+    display: inline-block;
+    width: 80%;
+}
+
+/* Onderste tekst */
+.footer-bottom {
+    margin-top: 20px;
+}
 *,
 *::before,
 *::after {
@@ -35,6 +179,10 @@ header nav {
     align-items: center;
     gap: 30px;
     margin-right: 20px;
+    justify-content: flex-end;
+    gap: 50px;
+    flex-grow: 1;
+    margin-right: 50px;
 }
 
 header nav a {
@@ -42,13 +190,6 @@ header nav a {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-header nav a:hover,
-header nav a:focus {
-    color: #4CAF50;
-    outline: none;
 }
 
 header nav input {
