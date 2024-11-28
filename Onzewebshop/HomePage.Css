@@ -184,6 +184,8 @@ footer {
     padding: 30px 20px;
     text-align: center;
     margin-top: 40px;
+    position: relative;
+    height: 300px;
 }
 
 footer .footer-item {
@@ -224,3 +226,22 @@ footer .footer-item img {
     font-weight: bold;
     margin: 40px 0 20px;
 }
+.boven-links {
+    position: absolute;
+    top: 0; /* Zet bovenaan */
+    left: 0; /* Zet links */
+    padding: 10px; /* Optioneel: wat ruimte om de tekst */
+  }
+  
+  .boven-rechts {
+    position: absolute;
+    top: 0; /* Zet bovenaan */
+    right: 0; /* Zet rechts */
+    padding: 10px; /* Optioneel: wat ruimte om de tekst */
+  }
+  .midden-onder {
+    position: absolute;
+    bottom: 0; /* Zet helemaal onderaan */
+    left: 50%; /* Zet horizontaal in het midden */
+    transform: translateX(-50%);
+  }
