@@ -14,7 +14,6 @@ body {
     color: black;
 }
 
-/* Header Styling */
 header {
     padding: 20px;
     background-color: #fff;
@@ -65,7 +64,7 @@ header nav input:focus {
     outline: none;
 }
 
-/* Advertisement Section */
+
 .advertisement img {
     max-width: 100%;
     height: auto;
@@ -78,7 +77,6 @@ header nav input:focus {
     transform: scale(1.05);
 }
 
-/* Recommended Products */
 .recommended-products {
     margin: 40px auto;
     max-width: 1200px;
@@ -127,7 +125,7 @@ header nav input:focus {
     margin: 8px 0;
 }
 
-/* Button Container */
+
 .button-container {
     display: flex;
     justify-content: center;
@@ -162,7 +160,7 @@ header nav input:focus {
     background-color: #0056b3;
 }
 
-/* Footer Styling */
+
 footer {
     background-color: #f9f9f9;
     padding: 20px;
