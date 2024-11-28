@@ -13,7 +13,6 @@ body {
     color: #333;
 }
 
-
 header {
     padding: 20px;
     background-color: #fff;
@@ -64,7 +63,6 @@ header .logo {
     transform: scale(1.1);
 }
 
-
 .advertisement {
     margin: 30px auto;
     text-align: center;
@@ -75,18 +73,17 @@ header .logo {
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease;
+    border-radius: 15px;
 }
 
 .advertisement img:hover {
     transform: scale(1.05);
 }
 
-
 .product-section {
     margin: 40px auto;
     max-width: 1200px;
 }
-
 
 .section-title {
     font-size: 24px;
@@ -95,14 +92,12 @@ header .logo {
     text-align: center;
 }
 
-
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-content: flex-start;
 }
-
 
 .product-card {
     background-color: #fff;
@@ -111,11 +106,13 @@ header .logo {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 270px;
+    max-width: 300px;
     min-width: 230px;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
 
 .product-card:hover {
     transform: scale(1.05);
@@ -124,26 +121,33 @@ header .logo {
 
 .product-card img {
     width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
+    height: 300px; 
+    object-fit: contain;
+    border-radius: 0px;
     margin-bottom: 15px;
 }
-
 
 .product-card h3 {
     font-size: 18px;
     color: #333;
     margin-bottom: 10px;
+    text-align: center;
 }
-
 
 .product-card p {
     font-size: 14px;
     color: #555;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
+.product-card .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
 
 .button-container {
     display: flex;
@@ -151,7 +155,6 @@ header .logo {
     gap: 10px;
     margin-top: 10px;
 }
-
 
 .winkelmandje-btn,
 .nu-kopen-btn {
@@ -174,7 +177,6 @@ header .logo {
     background-color: #0056b3;
     transform: scale(1.1);
 }
-
 
 footer {
     background-color: #333;
@@ -215,9 +217,6 @@ footer .footer-item img {
     font-size: 12px;
     color: #aaa;
 }
-
-
-
 
 .recommended-products-title {
     text-align: center;
