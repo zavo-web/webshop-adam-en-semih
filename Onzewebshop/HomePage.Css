@@ -228,20 +228,20 @@ footer .footer-item img {
 }
 .boven-links {
     position: absolute;
-    top: 0; /* Zet bovenaan */
-    left: 0; /* Zet links */
-    padding: 10px; /* Optioneel: wat ruimte om de tekst */
+    top: 0;
+    left: 0;
+    padding: 10px;
   }
   
   .boven-rechts {
     position: absolute;
-    top: 0; /* Zet bovenaan */
-    right: 0; /* Zet rechts */
-    padding: 10px; /* Optioneel: wat ruimte om de tekst */
+    top: 0;
+    right: 0;
+    padding: 10px;
   }
   .midden-onder {
     position: absolute;
-    bottom: 0; /* Zet helemaal onderaan */
-    left: 50%; /* Zet horizontaal in het midden */
+    bottom: 0;
+    left: 50%;
     transform: translateX(-50%);
   }
