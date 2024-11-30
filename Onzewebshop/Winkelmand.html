@@ -1,60 +1,69 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Winkelmandje</title>
-    <link rel="stylesheet" href="Winkelmand.css">
-    <link rel="icon" href="./img/LogoNew.png" type="image/png">
-</head>
-<body>
-   <!-- Header -->
-   <header class="top-header">
-    <a href="HomePage.html">
-      <img src="./img/orlogo.png" alt="Logo" class="logo" />
-   </a>
-    <nav class="nav-menu">
-      <a href="TelefoonCategory.html" class="nav-item">Categorieën</a>
-      <a href="Overons.html" class="nav-item">Over Ons</a>
-      <input
-        type="text"
-        placeholder="Zoekbalk"
-        id="search-input"
-        class="search-bar"
-      />
-      <a href="profiel.html" class="nav-item">Profiel</a>
-      <a href="Winkelmand.html" class="nav-item">Winkelmand</a>
-    </nav>
-  </header>
-  
+    <link rel="stylesheet" href="Winkelmand.css" />
+    <link rel="icon" href="./img/LogoNew.png" type="image/png" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="top-header">
+      <nav>
+        <a href="HomePage.html">
+          <img src="./img/orlogo.png" alt="Logo" class="logo" />
+        </a>
+      </nav>
+      <nav class="nav-menu">
+        <a href="TelefoonCategory.html" class="nav-item">Categorieën</a>
+        <a href="Overons.html" class="nav-item">Over Ons</a>
+        <input
+          type="text"
+          placeholder="Zoekbalk"
+          id="search-input"
+          class="search-bar"
+        />
+        <a href="profiel.html" class="nav-item">Profiel</a>
+        <a href="Winkelmand.html" class="nav-item">Winkelmand</a>
+      </nav>
+    </header>
 
     <h2>Winkelmandje:</h2>
-    
+
     <div class="cart-container">
-        <div class="cart-item">
-            <img src="./img/s23ultra.png" alt="Product afbeelding" class="product-image">
-            <div class="product-details">
-                <h3>Samsung Galaxy s23 Ultra - 5G</h3>
-                <p>Prijs per stuk: 899.99€</p>
-                <label>Aantal:</label>
-                <input type="number" value="1" min="1">
-                <p class="total-price">Totaal: 2143.99€</p>
-            </div>
+      <div class="cart-item">
+        <img
+          src="./img/s23ultra.png"
+          alt="Product afbeelding"
+          class="product-image"
+        />
+        <div class="product-details">
+          <h3>Samsung Galaxy s23 Ultra - 5G</h3>
+          <p>Prijs per stuk: 899.99€</p>
+          <label>Aantal:</label>
+          <input type="number" value="1" min="1" />
+          <p class="total-price">Totaal: 2143.99€</p>
         </div>
-        
-        <div class="cart-item">
-            <img src="./img/Zfold5x.png" alt="Product afbeelding" class="product-image">
-            <div class="product-details">
-                <h3>Samsung Galaxy Z Fold 5</h3>
-                <p>Prijs per stuk: €1299€</p>
-                <label>Aantal:</label>
-                <input type="number" value="1" min="1">
-                <p class="total-price">Totaal: 1299€</p>
-            </div>
+      </div>
+
+      <div class="cart-item">
+        <img
+          src="./img/Zfold5x.png"
+          alt="Product afbeelding"
+          class="product-image"
+        />
+        <div class="product-details">
+          <h3>Samsung Galaxy Z Fold 5</h3>
+          <p>Prijs per stuk: €1299€</p>
+          <label>Aantal:</label>
+          <input type="number" value="1" min="1" />
+          <p class="total-price">Totaal: 1299€</p>
         </div>
+      </div>
     </div>
-    
-    <input type="submit" value="Bestelling Plaatsen" class="submit-btn">
+
+    <input type="submit" value="Bestelling Plaatsen" class="submit-btn" />
 
     <!-- Footer -->
     <footer>
@@ -100,7 +109,12 @@
         <p><strong>adres:</strong> Stationsstraat 50, 1930 Zaventem, België</p>
         <h3>Volg ons ook op</h3>
         <a href="https://www.instagram.com/" target="_blank">
-          <img src="./img/instagram_logo_transparent.png" alt="insta" width="60" height="60" />
+          <img
+            src="./img/instagram_logo_transparent.png"
+            alt="insta"
+            width="60"
+            height="60"
+          />
         </a>
         <a href="https://www.facebook.com" target="_blank">
           <img src="./img/NewFace.png" alt="facebook" width="60" height="60" />
@@ -111,5 +125,5 @@
         <p>&copy; 2024 PhonePlanet. Alle rechten voorbehouden.</p>
       </div>
     </footer>
-</body>
+  </body>
 </html>
