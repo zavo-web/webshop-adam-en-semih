@@ -1,122 +1,187 @@
+/* Reset and Global Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
+    color: #333;
     margin: 0;
-    padding: 0;
-    text-align: center;
 }
 
+/* Header */
 header {
-    padding: 20px 0;
+    padding: 20px;
     background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.header-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
 }
 
-#search-input {
-    width: 300px;
-    height: 40px;
-    font-size: 18px;
+header .logo {
+    width: 120px;
+    height: auto;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.nav-menu .search-bar {
     padding: 10px;
-    border-radius: 25px;
+    width: 300px;
     border: 2px solid #ccc;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.nav-menu .search-bar:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.nav-menu .nav-item {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #f9f9f9;
     transition: all 0.3s ease;
 }
 
-#search-input:focus {
-    border-color: #4CAF50;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav a {
-    display: inline-block;
-}
-
-nav img {
-    width: 40px;
-    height: auto;
-    margin: 10px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-nav img:hover {
+.nav-menu .nav-item:hover {
+    background-color: #4CAF50;
+    color: #fff;
     transform: scale(1.1);
 }
 
+
 main {
-    padding: 40px 20px;
-}
-
-h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-form {
-    max-width: 400px;
+    padding: 20px;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+main h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main form {
     background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-label {
-    font-size: 16px;
-    margin-bottom: 8px;
+main form label {
+    font-size: 14px;
+    margin-bottom: 5px;
     display: block;
-    text-align: left;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 90%;
+main form input {
+    width: 100%;
     padding: 10px;
-    margin: 10px 0 20px;
-    border-radius: 8px;
-    border: 2px solid #ccc;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus {
-    border-color: #4CAF50;
-}
-
-input[type="submit"] {
+main form input[type="submit"] {
     background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
+    color: #fff;
     font-size: 16px;
+    border: none;
     cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 25px;
     transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
-    background-color: #45a049;
+main form input[type="submit"]:hover {
+    background-color: #2b712e;
 }
 
 footer {
     background-color: #333;
-    color: white;
-    padding: 20px;
+    color: #fff;
+    padding: 30px 20px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
+    position: relative;
+    height: 300px;
 }
+
+footer .footer-item {
+    margin-bottom: 20px;
+}
+
+footer h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer p,
+footer a {
+    font-size: 14px;
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer .footer-item img {
+    margin: 10px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.recommended-products-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px 0 20px;
+}
+.boven-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+  
+  .boven-rechts {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+  }
+  .midden-onder {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
