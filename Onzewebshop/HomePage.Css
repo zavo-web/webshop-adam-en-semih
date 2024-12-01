@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
 }
-
+/* Adam heeft header gedaan */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
@@ -26,7 +26,7 @@ header .logo {
     width: 120px;
     height: auto;
 }
-
+/* Adam heeft navigatie menu gedaan */
 .nav-menu {
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@ header .logo {
     margin: 40px auto;
     max-width: 1200px;
 }
-
+/* Adam en Semih hebben product card gedaan */
 .section-title {
     font-size: 24px;
     font-weight: bold;
@@ -177,6 +177,7 @@ header .logo {
     background-color: #0056b3;
     transform: scale(1.1);
 }
+/* Semih heeft footer gedaan */
 
 footer {
     background-color: #333;
