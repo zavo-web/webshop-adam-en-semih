@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profiel</title>
+    <link rel="stylesheet" href="Profiel.css" />
+    <link rel="icon" href="./img/LogoNew.png" type="image/png" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="top-header">
+      <nav>
+        <a href="HomePage.html">
+          <img src="./img/orlogo.png" alt="Logo" class="logo" />
+        </a>
+      </nav>
+      <nav class="nav-menu">
+        <a href="TelefoonCategory.html" class="nav-item">Categorieën</a>
+        <a href="Overons.html" class="nav-item">Over Ons</a>
+        <input
+          type="text"
+          placeholder="Zoekbalk"
+          id="search-input"
+          class="search-bar"
+        />
+        <a href="profiel.html" class="nav-item">Profiel</a>
+        <a href="Winkelmand.html" class="nav-item">Winkelmand</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section>
+        <h1>Account aanmaken:</h1>
+
+        <form action="Webshop.html" method="POST">
+          <label for="Vnaam">Voornaam:</label><br />
+          <input type="text" id="Vnaam" name="Vnaam" required /><br /><br />
+
+          <label for="Anaam">Achternaam:</label><br />
+          <input type="text" id="Anaam" name="Anaam" required /><br /><br />
+
+          <label for="Email">Email-adres:</label><br />
+          <input type="email" id="Email" name="Email" required /><br /><br />
+
+          <label for="Wachtwoord">Wachtwoord:</label><br />
+          <input
+            type="password"
+            id="Wachtwoord"
+            name="Wachtwoord"
+            required
+          /><br /><br />
+
+          <label for="Gsm">Gsm nummer (optioneel):</label><br />
+          <input type="tel" id="Gsm" name="Gsm" /><br /><br />
+
+          <input type="submit" value="Inloggen" />
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-item center">
+        <img src="./img/orlogo.png" alt="Logo" width="100" />
+      </div>
+      <div class="boven-links">
+        <h2>Over ons</h2>
+        <nav>
+          <a href="./Overons.html">Wie zijn wij?</a><br />
+          <a href="./Overons.html">Onze missie</a><br />
+          <a href="./Overons.html">Waarom kiezen voor ons?</a><br />
+          <a href="./Overons.html">Onze visie</a><br />
+          <a href="./Overons.html">Wil je ons contacteren?</a><br />
+          <a href="./Overons.html">Over Copyright</a>
+        </nav>
+      </div>
+      <div class="boven-rechts">
+        <h2>Vragen?</h2>
+        <p>Email of bel ons!</p>
+        <p>
+          <strong>Email:</strong><br />
+          <a href="mailto:PhonePlanet@gmail.com">PhonePlanet@gmail.com</a>
+        </p>
+        <p>
+          <strong>Telefoon:</strong><br />
+          <a href="tel:+328392927">+328392927</a>
+        </p>
+        <p><strong>Adres:</strong> Stationsstraat 50, 1930 Zaventem, België</p>
+        <h3>Volg ons ook op</h3>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img
+            src="./img/instagram_logo_transparent.png"
+            alt="Instagram"
+            width="60"
+            height="60"
+          />
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="./img/NewFace.png" alt="Facebook" width="60" height="60" />
+        </a>
+      </div>
+      <div class="copyright midden-onder">
+        <p>&copy; 2024 PhonePlanet. Alle rechten voorbehouden.</p>
+      </div>
+    </footer>
+  </body>
+</html>
